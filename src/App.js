@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
+import Category from "./pages/Category";
 function App() {
   return (
     <div className="App bg">
@@ -17,6 +18,7 @@ function App() {
          <Route exact path="/" component={Home}/>
          <Route path="/about" component={About}/>
          <Route  path="/contacts" component={Contacts}/>
+         <Route path="/category/:name"  component={Category}/>
          <Route  component={Error}/>
 
        </Switch>
