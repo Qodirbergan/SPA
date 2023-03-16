@@ -6,11 +6,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Error from "./pages/Error";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
+    <div className="App bg">
      <Header/>
-     <main className="container">
+     <main className="container content mt-5 ">
 
        <Switch>
          <Route exact path="/" component={Home}/>
@@ -20,7 +21,9 @@ function App() {
 
        </Switch>
 
+
      </main>
+        <Footer/>
     </div>
   );
 }

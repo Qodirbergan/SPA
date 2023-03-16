@@ -6,20 +6,20 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link} from "react-router-dom";
 
-function Header() {
+function Headere() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" className='nav navbar fixed-top' expand="lg">
             <Container fluid>
-                <Link c to="/"  >Navbar scroll</Link>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Link className='nav navbar-brand' to="/"   >Navbar scroll</Link>
+                <Navbar.Toggle aria-controls="navbarScroll" className='bg-dark' />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
                         className="me-auto my-2 my-lg-0"
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Link  to="/about">About</Link>
-                        <Link to="/contacts">Contact</Link>
+                        <Link className='nav nav-link'  to="/about">About</Link>
+                        <Link  className='nav nav-link' to="/contacts">Contact</Link>
 
 
                     </Nav>
@@ -40,4 +40,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Headere;
