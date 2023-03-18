@@ -1,8 +1,9 @@
 import MealItem from "./MealItem";
-function MealList(meals) {
+
+function MealList( {meals}) {
     return(
         <div className="list">
-            {meals.map(meal=>(
+            { meals.map(meal=>(
                 <MealItem key={meal.idMeal} {...meal}/>
             ))}
 

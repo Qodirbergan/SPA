@@ -25,7 +25,7 @@ code {
 
 
 }
-.bg{
+bg{
   background-image: url("../img/meal.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -46,4 +46,8 @@ code {
 }
 .caard-content{
   flex-grow: 1;
+}
+img {
+  max-width: 100%;
+  margin-top: 1rem;
 }
